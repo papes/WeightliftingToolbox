@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     android:orientation="vertical"
+    tools:context=".Workouts" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Test"
+            android:textSize="30sp"
+            android:textStyle="bold" >
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/days"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Day 1" />
+
+        <Button
+            android:id="@+id/Wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Day 2" />
+
+        <Button
+            android:id="@+id/Friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Day 3" />
+    </LinearLayout>
+    
+     <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:text="        Your Stats"
+                android:textStyle="bold" >
+                
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Squat"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/squatStats"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2_"
+                android:text="Bench Press"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/benchStats"
+                android:gravity="center_horizontal" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2__"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView297"
+                android:text="Deadlift"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/deadliftStats"
+                android:gravity="center_horizontal"
+               >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow299"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3_"
+                android:text="Barbell Row"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/rowStats"
+                android:gravity="center_horizontal" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2____"
+                android:text="Incline Press"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/inclineStats"
+                android:gravity="center_horizontal"
+               >
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

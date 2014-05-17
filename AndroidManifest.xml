@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uco.bdavis42.finalproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.CalculateMaxes"
+            android:label="@string/title_activity_calculate_maxes" >
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.GatherMaxes"
+            android:label="@string/title_activity_gather_maxes" >
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.VisualWeights"
+            android:label="@string/title_activity_visual_weights" >
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.MyVideos"
+            android:label="@string/title_activity_my_videos" >
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.VideoListActivity"
+            android:label="@string/title_activity_video_list" >
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.VideoRecorderActivity"
+            android:label="@string/title_activity_video_recorder"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="edu.uco.bdavis42.weightliftingtoolbox.Workouts"
+            android:label="@string/title_activity_workouts" >
+        </activity>
+    </application>
+
+</manifest>

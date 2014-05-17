@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/label1"
+                android:text="1 Rep Max"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/label2"
+                android:text="5 Rep Max"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:textStyle="bold"
+                android:typeface="serif" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Squat"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/squat1RepMax"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/squat5RepMax"
+                android:gravity="center_horizontal" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2_"
+                android:text="Bench Press"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bench1RepMax"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView4_"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bench5RepMax"
+                android:gravity="center_horizontal" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Deadlift"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/deadlift1RepMax"
+                android:gravity="center_horizontal"
+               >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/deadlift5RepMax"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Barbell Row"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/row1RepMax"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/row5RepMax"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+          >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Incline Press"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/incline1RepMax"
+                android:gravity="center_horizontal"
+               >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/incline5RepMax"
+                android:gravity="center_horizontal"
+             >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/ConfirmMaxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Confirm" />
+            
+            <Button
+                android:id="@+id/CancelMaxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+
